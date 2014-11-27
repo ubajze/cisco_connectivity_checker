@@ -5,8 +5,8 @@ The script generates syslog message with the result.
 
 Configuration for running script periodically:
 
-event manager applet PING_TEST
- event timer watchdog time 300 maxrun 250
+event manager applet PING-TEST
+event timer watchdog time 300 maxrun 250
  action 0.5 cli command "enable"
  action 1.0 cli command "tclsh flash:ping.tcl"
  action 2.0 syslog msg "$syslog_msg_output$"
